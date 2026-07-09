@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom'
 import { motion, useScroll, useTransform, useSpring, useInView, AnimatePresence } from 'framer-motion'
 import './Hero.css'
 
-const roles = ['AI/ML Engineer', 'Problem Solver', 'System Architect']
+const roles = [
+  "Tomorrow",
+  "AI Solutions",
+  "Innovation",
+  "Products",
+];
 
 const container = {
   hidden: {},
@@ -113,7 +118,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.h1 className="hero-title" variants={fadeUp(0.1)}>
-          I build
+          Building
           <span className="hero-role-wrap">
             <AnimatePresence mode="wait">
               <motion.span
