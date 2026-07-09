@@ -1,0 +1,83 @@
+.education-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.education-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.education-card {
+  padding: 24px;
+}
+
+.education-card-image {
+  margin: -24px -24px 24px -24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.education-card-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to top, var(--surface), transparent);
+  pointer-events: none;
+}
+
+.education-card-image img {
+  width: 100%;
+  height: 220px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.education-card:hover .education-card-image img {
+  transform: scale(1.05);
+}
+
+.education-period {
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.education-degree {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.education-school {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.education-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .education-row {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card-image img {
+    height: 180px;
+  }
+}

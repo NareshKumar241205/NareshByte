@@ -1,0 +1,43 @@
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+
+.filter-btn {
+  position: relative;
+  padding: 10px 24px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  overflow: hidden;
+}
+
+.filter-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+.filter-btn.active {
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.filter-active {
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  z-index: 0;
+}
+
+.filter-label {
+  position: relative;
+  z-index: 1;
+}

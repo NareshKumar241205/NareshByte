@@ -1,0 +1,62 @@
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.bio-text {
+  flex: 1;
+}
+
+.bio-text p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.bio-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.bio-visual {
+  flex-shrink: 0;
+}
+
+.bio-initials {
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(var(--glass-blur));
+  display: grid;
+  place-items: center;
+  font-family: var(--font-serif);
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .bio {
+    flex-direction: column-reverse;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .bio-actions {
+    justify-content: center;
+  }
+
+  .bio-initials {
+    width: 150px;
+    height: 150px;
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,129 @@
+.contact-page {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.contact-intro {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-heading {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.contact-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  padding: 40px 36px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 24px;
+  flex: 1;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 0 8px;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: color var(--transition);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-label {
+  position: absolute;
+  left: 0;
+  top: 16px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  pointer-events: none;
+  transition: all var(--transition);
+}
+
+.form-label.floating {
+  top: -4px;
+  font-size: 0.78rem;
+  color: var(--accent);
+}
+
+.form-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--border);
+  transition: all var(--transition);
+}
+
+.form-input:focus ~ .form-line {
+  height: 2px;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent-glow);
+}
+
+.form-submit {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--bg);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all var(--transition);
+  margin-top: 8px;
+}
+
+.form-submit:hover {
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
+.form-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-error {
+  display: block;
+  font-size: 0.75rem;
+  color: #f07070;
+  margin-top: 6px;
+}
+
+@media (max-width: 500px) {
+  .contact-form {
+    padding: 28px 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

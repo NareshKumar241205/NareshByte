@@ -1,0 +1,95 @@
+.about-hero {
+  margin-bottom: 60px;
+}
+
+.about-hero-content {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.about-hero-image {
+  flex-shrink: 0;
+}
+
+.about-hero-img {
+  width: 180px;
+  height: 180px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  background: var(--surface);
+}
+
+.about-hero-text {
+  flex: 1;
+}
+
+.about-hero-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.about-hero-name {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.about-hero-role {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.about-hero-stats {
+  display: flex;
+  gap: 40px;
+}
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-stat-value {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.about-stat-label {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .about-hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-hero-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .about-hero-name {
+    font-size: 2rem;
+  }
+
+  .about-hero-stats {
+    justify-content: center;
+  }
+}

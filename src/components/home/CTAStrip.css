@@ -1,0 +1,37 @@
+.cta-strip {
+  padding: 80px 0;
+}
+
+.cta-strip-content {
+  padding: 64px 48px;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.cta-strip-heading {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cta-strip-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 36px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .cta-strip-content {
+    padding: 40px 28px;
+  }
+
+  .cta-strip-heading {
+    font-size: 1.5rem;
+  }
+}
